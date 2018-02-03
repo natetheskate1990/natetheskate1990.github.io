@@ -25,7 +25,7 @@ main {
 
 main img {
     width: 128px;
-    height: 700px;
+    height: auto;
 }
 
 footer {
