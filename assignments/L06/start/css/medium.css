@@ -1,27 +1,50 @@
-/* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    section.forecast {
+        display: block;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+        float: right;
+    }
 
 
-/*----------- BODY --------------*/
+    header,
+    nav {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: inline-block;
+        margin-left: .25rem;
+    }
+    .navigation a {
+        display: block;
+        color: #eee;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+        color: #000;
+        background-color: #777;
+    }
 
-
-
-/*----------- HEADER --------------*/
-
-
-
-/*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
-
-
-/*----------- MAIN --------------*/
-
-
-
-/*----------- FOOTER --------------*/
-    
-} /* end of media query */
+    /* responsive images */
+}
