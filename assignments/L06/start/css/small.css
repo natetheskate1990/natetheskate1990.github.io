@@ -19,7 +19,7 @@ footer {
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
+header {text-align: center; }
 
 header h1 {font-size: 4em}
 
