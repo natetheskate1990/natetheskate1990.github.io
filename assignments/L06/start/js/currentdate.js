@@ -7,7 +7,7 @@ var day = days[ d.getDay() ];
 var month = months[ d.getMonth() ];
 
 var year = d.getFullYear();
-var dayN = d.getDay();
+var dayN = d.getDate();
 
 
 document.getElementById("currentdate").innerHTML = day + ", " + dayN + " " + month + " " + year;
