@@ -1,35 +1,73 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en-us">
 
 <head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale1">
-<title>Gallery</title>
-    <meta name="description" content="This is the Gallery for the Weather Site">
-    <link rel="stylesheet" href="css/normalize.css">
-    </head>
-    
-    <nav>
-        <!--This is where I shoud like to put a Main Menu-->
-    </nav>
-    <main>
-        <p><img src="" alt="" height=""></p>
-         <h1>Gallery</h1>
-        
-    <ul>
-        <li>
-        </li>
-        </ul>
-    
-    </main>
-    <footer>
-        <p>©2018. Nathaniel D. May Illinois</p>
-        <p>&star; <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>&star;</p>
-    </footer>
-    
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Gallery</title>
+    <meta name="author" content="Nathaniel May">
+    <meta name="description" content="the new and improved Gallery">
+    <!-- external style references in the proper cascading order -->
+    <!--Thanks to Brother Odom's Screencast on 2/13/18-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
 
+<body>
+
+    <header>
+
+        <button onclick="toggleNavMenu()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul class="navigation">
+             <li><a href="#">Home</a></li>
+            <li class="active"><a href="/assignments/L05/franklin-5.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="/assignments/L07/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Gallery Images</h2>
+        <figure>
+            <img>
+        </figure>
+        <section>
+
+                <picture>
+                    <img src="images/sun.jpg" alt="Sun" width="75" height="75">
+                </picture>
+                        
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">Nathaniel May &copy; 2018 | The Weather Clock |
+            <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
    
-    
+
+</body>
 
 </html>
