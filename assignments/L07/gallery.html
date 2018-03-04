@@ -11,7 +11,7 @@
     <!--Thanks to Brother Odom's Screencast on 2/13/18-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <!-- Google API font reference -->
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="/assignments/L07/start/css/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
     <link href="/assignments/L07/start/css/small.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
@@ -25,12 +25,13 @@
 
     <header>
 
-        <button onclick="toggleNavMenu()">&#9776;</button>
+        
     </header>
 
     <!-- site navigation use placeholder references -->
     <nav>
-        <ul class="navigation">
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="hide" id="navBox">
              <li><a href="/assignments/L07/start/franklin7.html">Home</a></li>
             <li class="active"><a href="/assignments/L07/start/franklin7.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -72,8 +73,8 @@
             <span id="currentdate"></span></p>
     </footer>
 
-    <script src="js/hamburger.js"></script>
-    <script src="js/currentdate.js"></script>
+    <script src="/assignments/L07/start/js/hamburger.js"></script>
+    <script src="/assignments/L07/start/js/currentdate.js"></script>
    
 
 </body>

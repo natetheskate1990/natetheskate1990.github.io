@@ -16,35 +16,30 @@
 
     header,
     nav {
-        margin: 0 auto;
-        max-width: 600px;
+        margin: 2%;
+        max-width: 100%;
     }
     h1 {
         text-align: center;
     }
-    .hamburger {
+
+    nav button{
         display: none;
+
     }
-    .navigation {
-        background-color: #333;
-        overflow: hidden;
-        text-align: center;
+    nav ul{
+        display: flex;
+        margin-left: 2%;
+        flex-wrap: nowrap;
     }
-    .navigation li {
-        display: inline-block;
-        margin-left: .25rem;
+    nav ul li{
+        flex-direction: row;
+        width: auto;
     }
-    .navigation a {
-        display: block;
-        color: #eee;
-        padding: .5rem;
-        text-align: center;
-        text-decoration: none;
+    nav ul li a{
+       border-bottom: none; 
     }
-    .navigation a:hover {
-        color: #000;
-        background-color: #777;
-    }
+ 
     .picGrid{
     
     grid-template-columns: 1fr 1fr;

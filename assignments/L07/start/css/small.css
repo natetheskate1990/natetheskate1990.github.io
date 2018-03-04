@@ -3,14 +3,14 @@
 * {
     box-sizing: border-box;
 }
-
+/*
 container {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start
 }
-
+*/
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -34,21 +34,53 @@ header img {}
 
 header .subheading {font-size: 2em;}
 
-nav {}
 
-nav button {}
 
-nav ul {}
-
-nav ul li {
-    display: none;
+nav {
+    background-color: aqua;
 }
 
-nav ul li a {}
 
-nav ul li.active a {}
+nav button {
+    display: block;
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 5rem;
+}
 
-nav ul li a:hover {}
+nav ul {
+    display: flex; 
+    flex-wrap: wrap;
+    
+}
+nav ul.show{
+    display: flex;
+    
+}
+nav ul.hide{
+    display: none;
+}
+nav ul li {
+    background-color: blue;
+    flex-basis: 100%; 
+    list-style: none;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav ul li.active a {
+    background-color: darkblue;
+    
+}
+
+nav ul li a:hover {
+    background-color: darkblue;
+}
 
 main {}
 /*note: after main*/
@@ -94,28 +126,6 @@ footer > p {}
 
 
 
-.navigation.responsive {
-    position: relative;
-}
-
-.navigation.responsive li {
-    background-color: #eee;
-    display: block;
-    width: 100%;
-    margin: 2px 0;
-    border: 1px solid #ddd;
-}
-
-.navigation.responsive li a {
-    padding: 1rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-}
-
-.navigation.responsive li a:hover {
-    background-color: #ddd;
-}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
