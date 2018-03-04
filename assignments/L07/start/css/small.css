@@ -52,10 +52,11 @@ nav ul li a:hover {}
 
 main {}
 /*Added the grids here as I am unsure where they really go
-this did affect the way the pictures aligned on screen, i thought....*/
+this did affect the way the pictures aligned on screen, i thought...
+Defining grid with fr unit?*/
 .picGrid{
     display: picGrid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 .pidGrid{
