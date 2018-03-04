@@ -45,6 +45,12 @@
         color: #000;
         background-color: #777;
     }
+    .picGrid{
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+
 
     /* responsive images */
 }
