@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
 }
+
 container {
   display: flex;
   flex-flow: column;
@@ -50,13 +51,26 @@ nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-
+/*Added the grids here as I am unsure where they really go
+this did affect the way the pictures aligned on screen, i thought....*/
+.picGrid{
+    display: picGrid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.pidGrid{
+    border: 1px solid rgb(0,95,107);
+    border-radius: 3px;
+    Background-color: rgba(0,95,107,0.8);
+    padding: .2em;
+}
 main h2 {}
 
 main figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
 }
+
 
 main figure img {
     width: 100%;
