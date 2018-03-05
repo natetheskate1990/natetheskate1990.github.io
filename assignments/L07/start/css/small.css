@@ -2,16 +2,7 @@
 
 * {
     box-sizing: border-box;
-}
-/*
-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start
-}
-*/
-/* This wildcard applies to all elements ensuring a box layout model */
+}/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
@@ -89,9 +80,9 @@ main div#grid{
 }
 main .picGrid{
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-row: 400px 400px 400px;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
     grid-gap: 3%;
 }
 main .picGrid{
