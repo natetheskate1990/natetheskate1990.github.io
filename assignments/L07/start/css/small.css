@@ -82,18 +82,23 @@ nav ul li a:hover {
     background-color: darkblue;
 }
 
-main {}
+
 /*note: after main*/
-.picGrid{
-    
+main div#grid{
+    margin:auto;
+}
+main .picGrid{
+    display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
+    grid-row: 400px 400px 400px;
     grid-gap: 3%;
 }
-.pidGrid{
+main .picGrid{
     border: 1px solid rgb(0,95,107);
     border-radius: 3px;
     Background-color: rgba(0,95,107,0.8);
-    padding: .2em;
+    padding: 5px;
 }
 main h2 {}
 
@@ -104,7 +109,7 @@ main figure {
 
 
 main figure img {
-    width: 100%;
+    width: 400px;
 }
 
 section.forecast {
