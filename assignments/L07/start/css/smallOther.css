@@ -2,16 +2,7 @@
 
 * {
     box-sizing: border-box;
-}
-/*
-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start
-}*/
-
-/* This wildcard applies to all elements ensuring a box layout model */
+}/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
@@ -51,14 +42,7 @@ nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-end;
-}
+
 
 main h2 {}
 
