@@ -1,7 +1,7 @@
 function toggleNavMenu() {
     var x = document.getElementById("navBox");
     if (x.className === "show") {
-        x.xlassName = "hide";
+        x.className = "hide";
     } else {
             x.className = "show";
             
