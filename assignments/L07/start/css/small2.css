@@ -17,11 +17,23 @@ footer {
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {text-align: center; }
+header {
+    border-bottom: 1px solid midnightblue;
+    text-align: center; }
+header, footer, footer, a{
+    margin: 1.5rem auto;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+}
+header h1 {font-size: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+}
 
-header h1 {font-size: 4em}
-
-header img {}
+header img {
+    align-items: center;
+}
 
 header .subheading {font-size: 2em;}
 
@@ -61,6 +73,7 @@ nav ul li a {
     color: #eee;
     text-decoration: none;
     text-align: center;
+    justify-content: center;
     
 }
 
@@ -73,10 +86,14 @@ nav ul li a.hover {
     background-color: darkblue;
 }
 
-main{}
+main{
+    padding: 0 2%;
+    min-height: 10rem;
+}
 /*note: after main*/
 main div#grid{
     margin:auto;
+    
 }
 main .picGrid{
     display: flex;
@@ -91,7 +108,12 @@ main .picGrid{
     Background-color: rgba(0,95,107,0.8);
     padding: 5px;
 }
-main h2 {}
+main h2 {
+    margin: 1.5rem auto;
+    text-align: center;
+    font-family: 'helvetica', 'arial', sans-serif;
+    color:black;
+}
 
 main figure {
     margin: 0 0 .2rem 2%;
@@ -112,6 +134,7 @@ article p.town-article img {
     width: 75%;
     /* fill the page in the small/phone view */
     margin: auto;
+    float: right;
 }
 
 footer {}
@@ -119,7 +142,23 @@ footer {}
 footer aside {}
 
 footer > p {}
+.navigation.responsive{
+    position:relative;
+}
+.navigation.responsive li {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
 
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
 
 
 

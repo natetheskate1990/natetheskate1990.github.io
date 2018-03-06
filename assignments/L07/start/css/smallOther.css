@@ -6,7 +6,10 @@
 
 body {
     font-size: 16px;
-    /* Declare the base font-family - from google font api or other */
+    line-height: 32px;
+    /* Declare the base font-family- from google font api or other */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 header,
@@ -15,36 +18,97 @@ main,
 footer {
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 0 auto;
+    padding: .5rem;
+    max-width: 100%;
 }
 
-header {text-align: center; }
+header {
+    border-bottom: 1px solid midnightblue;
+    text-align: center; }
+header, footer, footer, a{
+    margin: 1.5rem auto;
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+}
+header h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+    }
+header h2{
+    margin: 1.5rem auto;
+    text-align: right;
+    font-size: 1rem;
+    color: white;
+}
 
-header h1 {font-size: 4em}
-
-header img {}
+header img {
+    margin: 0 2% 0 0;
+    align-items: center;
+    width: 95%;
+}
 
 header .subheading {font-size: 2em;}
 
-nav {}
+nav {background-color: midnightblue;}
 
-nav button {}
-
-nav ul {}
-
-nav ul li {
-    display: none;
+nav button {
+    display: block;
+    position: absolute;
+    margin-top: 0rem;
+    margin-right: 1.25rem;
 }
 
-nav ul li a {}
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul.show{
+    display: flex;
+}
+nav ul.hide{
+    display:none;
+}
+nav ul li {
+    flex-basis: 95%;
+    list-style: none;
+}
 
-nav ul li.active a {}
+nav ul li a {
+    font-size: .8rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: black;
+    padding: .5rem;
+}
 
-nav ul li a:hover {}
+nav ul li.active a {
+    text-decoration: underline;
+}
 
-main {}
+nav ul li a:hover {
+    background-color: darkcyan
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
 
 
-main h2 {}
+main h2 {
+    margin: 1.5rem auto;
+    text-align: center;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-family: 1.5rem;
+    color: black;
+}
 
 main figure {
     margin: 0 0 .2rem 2%;
@@ -54,16 +118,26 @@ main figure {
 main figure img {
     width: 100%;
 }
-
+main figure img{text-align: left; font-size: .65rem;    
+}
+div weatherLogo figure{
+    margin: 2rem 0;
+    border: 1px solid grey;
+}
+div weatherLogo img{width:95%}
 section.forecast {
     display: none;
 }
-
+div weatherLogo figcaption{
+    text-align: center;
+    font-size: .9rem;
+}
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 75%;
     /* fill the page in the small/phone view */
     margin: auto;
+    float: right;
 }
 
 footer {}
@@ -93,9 +167,6 @@ footer > p {}
     text-decoration: none;
 }
 
-.navigation.responsive li a:hover {
-    background-color: #ddd;
-}
 
 /* This structure refers to p elements that are direct children of the footer element */
 

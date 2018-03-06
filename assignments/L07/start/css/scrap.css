@@ -1,0 +1,208 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    line-height: 32px;
+      /* Declare the base font-family - from google font api or other */
+    font-family: 'Montserrat', sans-serif;
+    color: #1b4079;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 0 auto;
+    padding: .5rem;
+    max-width: 100%;
+    
+}
+
+header {
+    border-bottom: 1px solid #1b4079;
+}
+header, footer, footer, a{
+    margin: 1.5rem auto;
+    text-align: center;
+    background-color: #1b4079;
+    color: #fefefa;
+}
+header h1 {
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    color: #fefefa;
+}
+header h2 {
+    margin: 1.5rem auto;
+    text-align: right;
+    font-size: 1rem;
+    color: #fefefa;
+}
+header img {
+    
+    margin: 0 2% 0 0;
+    float: left;
+    width: 15%;
+}
+header .subheading {}
+
+nav {background-color: #1b4079;}
+
+nav button {display: block;
+        position: absolute; 
+        margin-top: 0rem; 
+        margin-right: 1.25rem;}
+
+
+/*.navigation { 
+    list-style: none; padding-left: 0;}*/
+
+/*.navigation li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    
+}*/
+
+nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+nav ul.show{
+    display: flex;
+}
+nav ul.hide{
+    display: none;
+}
+
+nav ul li {  
+        flex-basis: 95%;
+        list-style: none;
+}
+nav ul li a {
+    font-size: .8rem;
+    font-weight: 300;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #cbdf90 ;
+        padding: 0.5rem;
+        /*border-bottom: 1px solid rgba(0,0,0,0.2);*/
+}
+nav ul li.active a {
+    text-decoration: underline;
+}
+nav ul li a:hover {
+    background-color: darkblue;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+main h2 {
+    margin: 1.5rem auto;
+    text-align: center;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1.5rem;
+    color: #1b4079;
+    background-color: #cbdf90;
+}
+main figure.franklinphoto {
+    width: 96%;
+    margin: 0;
+    margin-left: 2%;
+}
+main figure.franklinphoto img { width: 100%; }
+main figure.franklinphoto figcaption {text-align: left; font-size: .65rem;}
+
+div weatherphoto {
+    
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    } 
+div weatherphoto figure{
+    margin: 2rem 0;
+    border: 1px solid #aaa;}
+
+div weatherphoto figure img {width: 95%;} 
+
+
+div weatherphoto figcaption {
+    text-align: center;
+    font-size: .9rem;
+}
+
+/*.grid {
+    display: grid;
+    grid-auto-columns: repeat(9,1fr);
+    grid-gap: 1px;
+    justify-items: center;
+    align-content: space-between;
+    column-count: 1;
+        
+}
+.grid div {
+    
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: gray;
+    padding: 0;
+}*/
+
+section {}
+section h3{
+    text-align: left;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1.3rem;
+    color: #1b4079;
+    background-color: #cbdf90;
+}
+section>p{
+    margin: 1.3rem;
+    line-height: normal
+}
+section img{
+    float: right;
+}
+section.forecast {display: none;}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width:50%; /* fill the page in the small/phone view */
+  margin: 1.35rem;
+    float: right;
+}
+article{}
+article h3{
+    text-align: left;
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 1.3rem;
+    color: #1b4079;
+    background-color: #cbdf90;
+}
+article>p{
+    margin: 1.5rem;
+    text-align: left;
+    background-color: #fefefa;
+    color: #1b4079;
+    line-height: 1.5;
+}
+footer {}
+footer aside {
+    text-align: center;
+    font-size: .7rem;
+}
+footer>p {
+    margin: .1rem;
+    text-align: center;
+    background-color: #1b4079;
+    color: #fefefa;
+}/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
