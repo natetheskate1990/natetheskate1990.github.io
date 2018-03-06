@@ -49,7 +49,7 @@ nav ul.show{
     
 }
 nav ul.hide{
-    display: none;
+    display: flex;
 }
 nav ul li {
     background-color: blue;
@@ -79,16 +79,16 @@ main div#grid{
     margin:auto;
 }
 main .picGrid{
-    display: flex;
+    display: grid;
    
-    grid-template-columns: 1fr 1fr 1fr;
+   
     
     grid-gap: 3%;
 }
 main .picGrid{
-    border: 1px solid rgb(0,95,107);
-    border-radius: 3px;
-    Background-color: rgba(0,95,107,0.8);
+    border: 1px solid blue;
+    border-radius: 5px;
+    Background-color: lightblue;
     padding: 5px;
 }
 main h2 {}
