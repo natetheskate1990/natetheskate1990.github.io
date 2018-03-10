@@ -34,7 +34,7 @@
     <!-- site navigation use placeholder references -->
     <nav>
         <ul class="navigation">
-             <li><a href="/assignments/L07/start/franklin8.html">Home</a></li>
+            <li><a href="/assignments/L07/start/franklin8.html">Home</a></li>
             <li class="active"><a href="/assignments/L07/start/franklin8.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
@@ -44,7 +44,39 @@
     </nav>
 
     <main>
-       
+        <!--Paul Cheney tutorial, Udemy-->
+        <form action="" method="post" enctype="multipart/form-data" name="stormcenter" id="scform">
+            <fieldset>
+                <Legend><span>Personal Information</span></Legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
+                <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="0001112222" pattern="[0-9]{10,20}" required></label>
+                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="zip" pattern="[0-9]{5,10}"></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>Storm Information</span></legend>
+                <label><span>Storm Date:</span><input name="stormdate" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+                <label><span>Storm Type</span><input name="stormtype" type="text" list="stormtype"></label>
+                <label>
+            <datalist id="stormtype">
+                <option value="Flash Flood"> </option>
+                <option value="Hail"> </option>
+                <option value="Thunder Storm"> </option>
+                <option value="Tornado"> </option>
+                <option value="Hurricane"> </option>
+                 
+            </datalist>
+                </label>
+                <label><span>Storm Severity</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+                <label><span>Storm Region</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+                <label><span>User In-Danger Level</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+            </fieldset>
+            <!--additional spot for text area, form submission button, thanks page with working back button-->
+            <input type="submit" value="OK" class="submitBtn">
+            <input name="redirect" type="hidden" value="thanks.html">
+            
+        </form>
+
     </main>
 
     <footer>
