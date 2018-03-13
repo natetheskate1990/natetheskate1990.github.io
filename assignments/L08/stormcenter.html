@@ -51,11 +51,11 @@
                 <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
                 <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label><br>
                 <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="0001112222" pattern="[0-9]{10,20}" required></label>
-                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="zip" pattern="[0-9]{5,10}"></label>
+                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="zip" ></label>
             </fieldset>
             <fieldset>
                 <legend><span>Storm Information</span></legend>
-                <label><span>Storm Date:</span><input name="stormdate" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+                <label><span>Storm Date:</span><input name="stormdate" type="date" value="" ></label>
                 <label><span>Storm Type</span><input name="stormtype" type="text" list="stormtype"></label>
                 <label>
             <datalist id="stormtype">
@@ -68,8 +68,8 @@
             </datalist>
                 </label>
                 <br>
-                 <label for="stormseverity">Storm Severity Rating (1 to 10)</label>
-		<input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                 <label name="stormseverity">Storm Severity Rating (1 to 10)</label>
+		<input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		<span id="ratingvalue">10</span><br>
                 <label><span>Storm Region</span><input name="stormregion" type="text" list="stormregion"></label>
                 <datalist id="stormregion">
