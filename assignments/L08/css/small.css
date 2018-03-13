@@ -119,8 +119,15 @@ footer {}
 footer aside {}
 
 footer > p {}
-
-
+/*Uh, here is the thing from Pen for the range i think*/
+body {line-height: 1.5em;}
+h2 {margin-left:20px;border-bottom:1px solid #777; font-size: 1.2em;color:#3377bb;}
+.ablock {margin-left:30px;}
+.tight input {margin:-10px 0px;}
+input { margin:5px 20px; font-size:.8em; color: #3377bb; }
+label {margin-right:-10px;}
+fieldset {margin-bottom:15px;background-color:#eee;}
+legend { color: #3377bb}
 
 
 /* This structure refers to p elements that are direct children of the footer element */

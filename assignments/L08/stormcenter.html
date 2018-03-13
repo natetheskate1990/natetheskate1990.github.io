@@ -44,12 +44,12 @@
     </nav>
 
     <main>
-        <!--Paul Cheney tutorial, Udemy-->
-        <form action="" method="post" enctype="multipart/form-data" name="stormcenter" id="scform">
+        <!--Paul tutorial, Udemy-->
+        <form enctype="multipart/form-data" action="thanks.html" name="stormcenter" id="scform">
             <fieldset>
                 <Legend><span>Personal Information</span></Legend>
                 <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label>
-                <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label><br>
                 <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="0001112222" pattern="[0-9]{10,20}" required></label>
                 <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="zip" pattern="[0-9]{5,10}"></label>
             </fieldset>
@@ -67,14 +67,34 @@
                  
             </datalist>
                 </label>
-                <label><span>Storm Severity</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
-                <label><span>Storm Region</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
-                <label><span>User In-Danger Level</span><input name="stormtype" type="date" value="/  /" placeholder="00/00/0000" pattern="[0-9/]{10,12}"></label>
+                <br>
+                 <label for="stormseverity">Storm Severity Rating (1 to 10)</label>
+		<input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">10</span><br>
+                <label><span>Storm Region</span><input name="stormregion" type="text" list="stormregion"></label>
+                <datalist id="stormregion">
+                    <option value="Franklin"></option>
+                    <option value="Greenville"></option>
+                    <option value="Springfield"></option>
+                </datalist>
+                <br>
+                <label><span>User In-Danger Level</span><br><input type="radio" name="danger" >Yes</label><br>
+                <label><span></span><input type="radio" name="danger1" >No</label><br>
+                <label><span></span><input type="radio" name="danger2" >Maybe</label><br>
+               
+                
+               
             </fieldset>
             <!--additional spot for text area, form submission button, thanks page with working back button-->
-            <input type="submit" value="OK" class="submitBtn">
-            <input name="redirect" type="hidden" value="thanks.html">
-            
+            <fieldset>
+             Other Details: <br>
+                <textarea name="message" rows="10" cols="30">
+
+                </textarea>
+          
+            <input type="submit" value="Submit" class="submitBtn">
+            <input name="redirect" type="hidden" >
+              </fieldset>
         </form>
 
     </main>

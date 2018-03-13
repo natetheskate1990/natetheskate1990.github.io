@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+ 
+  
+
+.picGrid{
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+     article p.town-article img { width: 350px; height: 350px; float: right;}
+}
