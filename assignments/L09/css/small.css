@@ -40,16 +40,16 @@ nav button {
 }
 
 nav ul {
-    display: flex; 
+    display: grid; 
     flex-wrap: wrap;
     
 }
 nav ul.show{
-    display: flex;
+    display: block;
     
 }
 nav ul.hide{
-    display: flex;
+    display: none;
 }
 nav ul li {
     background-color: blue;
