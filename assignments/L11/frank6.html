@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Weather Clock</title>
+    <meta name="author" content="Nathaniel May">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <!--Thanks to Brother Odom's Screencast on 2/13/18-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/rsz_weatherclocklogo.jpg" alt="The site logo" height="350" width="750">
+        <h1>The Weather Clock</h1>
+        <div class="subheading">It's Always a Good Time to Check</div>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <ul class="navigation">
+             <li><a href="#">Home</a></li>
+            <li class="active"><a href="/assignments/L05/franklin-5.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <figure>
+            <img src="images/CaesareaSmall.jpg" alt="smallPic" sizes="100vw"
+               srcset="images/CaesareaSmall.jpg 600w, images/CaesareaMedium.jpg 800w, 
+                images/CaesareaLarge.jpg 1200w">
+        </figure>
+        <section>
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p> Sunny</p>
+                <p>High:90&deg;F</p>
+                <p>Low:60&deg;F</p>
+            </div>
+            <div class="current">
+
+                <picture>
+                    <!--<img src="Images/sun.png" alt="Sun" width="150" height="150">-->
+                </picture>
+            </div>
+            <div class="conditions">
+
+                <p>Chance of Precipitation: 0%</p>
+                <p>Wind Speed: 5mph SW</p>
+                <p>Wind Chill: **js</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <p class="town-article">
+                <img src="Images/FranklinPic.jpeg" alt="Franklin Sky-View" width="250" height="250"> short article content placeholder
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">Nathaniel May &copy; 2018 | The Weather Clock |
+            <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {text-align: center; }
+
+header h1 {font-size: 4em}
+
+header img {}
+
+header .subheading {font-size: 2em;}
+
+
+
+nav {
+    background-color: blue;
+}
+
+
+nav button {
+    display: block;
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 5rem;
+}
+
+nav ul {
+    display: grid; 
+    flex-wrap: wrap;
+    
+}
+nav ul.show{
+    display: block;
+    
+}
+nav ul.hide{
+    display: none;
+}
+nav ul li {
+    background-color: blue;
+    flex-basis: 100%; 
+    list-style: none;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+nav ul li.active a {
+    background-color: darkblue;
+    
+}
+
+nav ul li a:hover {
+    background-color: darkblue;
+}
+
+main{}
+/*note: after main*/
+main div#grid{
+    margin:auto;
+}
+main .picGrid{
+    display: grid;
+   
+   
+    
+    grid-gap: 3%;
+}
+main .picGrid{
+    border: 1px solid blue;
+    border-radius: 5px;
+    Background-color: lightblue;
+    padding: 5px;
+}
+main h2 {}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+
+main figure img {
+    width: 75%;
+}
+
+section.forecast {
+    display: none;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 75%;
+    /* fill the page in the small/phone view */
+    margin: auto;
+}
+
+footer {}
+
+footer aside {}
+
+footer > p {}
+
+
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

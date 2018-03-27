@@ -1,0 +1,42 @@
+html {
+  font-family: 'Ubuntu' 'sans-serif';
+}
+/*Color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black.*/
+table {
+  border-collapse: collapse;
+  border: 2px solid #628ca6;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+ th {
+  border: 1px #e7f0ed;
+  padding: 10px 20px;
+  
+ 
+}
+
+th {
+  background-color: #628ca6;
+}
+
+td {
+  text-align: center;
+    
+}
+
+tr:nth-child(even) td {
+  background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) td {
+  background-color:  lightblue;
+;
+}
+/*tr:first-child(th){
+    text-decoration-color: antiquewhite;
+}*/
+
+caption {
+  padding: 10px;
+}

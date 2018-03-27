@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Gallery</title>
+    <meta name="author" content="Nathaniel May">
+    <meta name="description" content="the new and improved Gallery">
+    <!-- external style references in the proper cascading order -->
+    <!--Thanks to Brother Odom's Screencast on 2/13/18-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="/css/assignments/L09/css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="/assignments/L09/css/small.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="/assignments/L09/css/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="/assignments/L09/css/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id=navBox>
+            <li><a href="/assignments/L07/start/franklin7.html">Home</a></li>
+            <li class="active"><a href="/assignments/L07/start/franklin7.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="/assignments/L07/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <h2>Gallery Images</h2>
+
+        <!-- <figure>
+            <img>
+      </figure>-->
+
+        <div class="picGrid" id="grid">
+
+            <figure>
+                <img src="/assignments/L07/start/images/img1.jpg" alt="img1">
+                <figcaption>Image 1</figcaption>
+            </figure>
+            <figure>
+                <img src="/assignments/L07/start/images/img2.jpg" alt="img2">
+                <figcaption>Image 2</figcaption>
+            </figure>
+            <figure>
+                <img src="/assignments/L07/start/images/img3.jpg" alt="img3">
+                <figcaption>Image 3</figcaption>
+            </figure>
+            <figure>
+                <img src="/assignments/L07/start/images/img4.jpg" alt="img4">
+                <figcaption>Image 4</figcaption>
+            </figure>
+            <figure>
+                <img src="/assignments/L07/start/images/img5.jpg" alt="img5">
+                <figcaption>Image 5</figcaption>
+            </figure>
+            <figure>
+                <img src="/assignments/L07/start/images/img6.jpg" alt="img6">
+                <figcaption>Image 6</figcaption>
+            </figure>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            may17014@byui.edu
+        </aside>
+        <p class="footer-bar">Nathaniel May &copy; 2018 | The Weather Clock |
+            <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="/assignments/L07/start/js/hamburger.js"></script>
+    <script src="/assignments/L07/start/js/currentdate.js"></script>
+
+
+</body>
+
+</html>
